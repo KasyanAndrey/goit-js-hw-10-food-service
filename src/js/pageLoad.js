@@ -1,13 +1,14 @@
-import { refs } from './allRefs.js';
 import { Theme } from './allThemes.js';
+import { STORAGE_KEY } from './allThemes.js';
 import { setThemeLight } from './setThemes';
 import { setThemeDarck } from './setThemes';
 
-function onChangeTheme(evt) {
-  if (refs.bodyEl.classList.contains(Theme.LIGHT)) {
+function getPageLoad() {
+  if (localStorage.getItem(STORAGE_KEY) === Theme.DARK) {
     setThemeDarck();
   } else {
     setThemeLight();
   }
 }
-export default onChangeTheme;
+
+export default getPageLoad;

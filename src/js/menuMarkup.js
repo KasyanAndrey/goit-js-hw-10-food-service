@@ -1,5 +1,5 @@
-import menuItemsTpl from '../templates/menu-items.hbs';
-import menu from './menu.json';
+import menuItemsTpl from '../templates/menu-tamplate.hbs';
+import menu from '../data/menu.json';
 
 function createMenuItemsMarkup(cards) {
   return menuItemsTpl(cards);

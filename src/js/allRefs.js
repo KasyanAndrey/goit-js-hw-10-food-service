@@ -1,5 +1,5 @@
-export const allRef = {
+export const refs = {
   menuList: document.querySelector('ul.js-menu'),
-  controlEl: document.querySelector('#theme-switch-toggle'),
+  inputEl: document.querySelector('#theme-switch-toggle'),
   bodyEl: document.querySelector('body'),
 };
